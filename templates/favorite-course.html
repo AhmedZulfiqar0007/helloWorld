@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Favorite Course
+{% endblock %}
+
+{% block content %}
+
+<h2>Favorite Course</h2>
+
+{% if subject and course_number %}
+
+<p class="alert alert-success">
+You entered your favorite course as:
+<strong>{{ subject }} {{ course_number }}</strong>
+</p>
+
+{% else %}
+
+<p class="alert alert-warning">
+Please provide query parameters in the URL.
+Example:
+
+<br><br>
+
+<code>
+/favorite-course?subject=BMGT&course_number=407
+</code>
+
+</p>
+
+{% endif %}
+
+{% endblock %}
