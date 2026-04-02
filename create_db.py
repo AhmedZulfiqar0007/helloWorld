@@ -27,11 +27,11 @@ with app.app_context():
     # Initial loading of users
     users = [
         {
-            'username': 'Zulfi',
+            'username': 'zulfi',
             'email': 'zulfi@umd.edu',
             'first_name': 'Ahmed',
             'last_name': 'Zulfiqar',
-            'password': generate_password_hash('Ahmed', method='pbkdf2:sha256'),
+            'password': generate_password_hash('zulfi', method='pbkdf2:sha256'),
             'role': 'STUDENT'
         },
         {
